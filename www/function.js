@@ -1,10 +1,10 @@
 var versi = "1";
-var url = "https://filialtanahabang.com/app/";
-var url_admin = "https://filialtanahabang.com/";
+var url = "https://duta.web.id/app/";
+var url_admin = "https://duta.web.id/";
 var api_ongkir = "https://ongkir.tokojs.com/api_ongkir/";
 
 var token='6KB4J3xGZX';
-var nama_aplikasi='Toko Filial';
+var nama_aplikasi='DUTA UTAMA ELECTRONIC';
 var id_pelanggan=localStorage.getItem('id_pelanggan');
 
 var ua = navigator.userAgent.toLowerCase();
