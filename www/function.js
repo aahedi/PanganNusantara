@@ -50,7 +50,8 @@ function menu_kiri() {
         $("#menu_kiri").append("<li style=\"list-style:none\"><a href=\"#informasi\"><i class=\"icon-info\"></i>Informasi</a></li>");
         $("#menu_kiri").append('<li style="list-style:none"><a href="javascript:;" onclick="logout()"><i class=\"icon-power\"></i>Logout</a></li>');
         $("#menu_kiri").append("<li style=\"list-style:none\"><a href=\"#kirim_pesan\"><i class=\"icon-mail\"></i>Kirim Pesan</a></li>");
-       //$("#menu_kiri").append("<li style=\"list-style:none\"><a href=\"#saldo\"><i class=\"icon-credit-card\"></i>Saldo</a></li>");
+        $("#menu_kiri").append("<li style=\"list-style:none\"><a href=\"#saldo\"><i class=\"icon-credit-card\"></i>Saldo</a></li>");
+        $("#menu_kiri").append("<li style=\"list-style:none\"><a href=\"#point\"><i class=\"icon-chart\"></i>Point</a></li>");
    
     }
     $("#menu_kiri").append("<li style=\"list-style:none\"><a href=\"#kontak\"><i class=\"icon-contacts\"></i>Kontak Kami</a></li>");
@@ -68,7 +69,7 @@ function menu_kanan() {
     $("#menu_kanan").append("<li style=\"list-style:none\"><a href=\"#page+3\"><i class=\"icon-lightbulb\"></i>Info Reseller</a></li>");
     $("#menu_kanan").append("<li style=\"list-style:none\"><a href=\"#rekening\"><i class=\"icon-tags\"></i>Info Rekening</a></li>");
     $("#menu_kanan").append("<li style=\"list-style:none\"><a href=\"#cek_ongkir\"><i class=\"icon-calculator\"></i>Cek Ongkir</a></li>");
-    $("#menu_kanan").append("<li style=\"list-style:none\"><a href=\"javascript:;\" onclick=\"window.open('http://cekresi.com', '_blank', 'location=no');\" ><i class=\"icon-ticket\"></i>Cek Resi</a></li>");
+    $("#menu_kanan").append("<li style=\"list-style:none\"><a href=\"#cekresi\"><i class=\"icon-ticket\"></i>Cek Resi</a></li>");
     $("#menu_kanan").append("<li style=\"list-style:none\"><a href=\"#page+2\"><i class=\"icon-star-filled\"></i>Testimoni</a></li>");
     $("#menu_kanan").append("<li style=\"list-style:none\"><a href=\"#update\"><i class=\"icon-upload-cloud\"></i>Update</a></li>");
     $("#menu_kanan").append("</ul>");
@@ -105,7 +106,7 @@ localStorage.setItem('lokasi',jejax);
 
 				localStorage.setItem(jejax,Base64.encode(result)); //simpan offline
 
-				if(halaman=='kategori' || halaman=='produk' || halaman=='all'){$('.bordercari').show();}
+				if(halaman=='kategori' || halaman=='produk' || halaman=='all'){$('.bordercari').show();cek_akses();}
 
 				if(halaman=='informasi'){isi_notif('info')}
 
