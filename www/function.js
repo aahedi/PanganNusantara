@@ -4,7 +4,7 @@ var url_admin = "https://busana.my.id/";
 var api_ongkir = "https://ongkir.tokojs.com/api_ongkir/";
 
 var token='6KB4J3xGZX';
-var nama_aplikasi='Sutra Alam';
+var nama_aplikasi='Busana & Aksesoris';
 var id_pelanggan=localStorage.getItem('id_pelanggan');
 
 var ua = navigator.userAgent.toLowerCase();
