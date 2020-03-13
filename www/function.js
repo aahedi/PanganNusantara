@@ -1,6 +1,6 @@
 var versi = "1";
-var url = "https://sutraalam.com/app/";
-var url_admin = "https://sutraalam.com/";
+var url = "https://busana.my.id/app/";
+var url_admin = "https://busana.my.id/";
 var api_ongkir = "https://ongkir.tokojs.com/api_ongkir/";
 
 var token='6KB4J3xGZX';
